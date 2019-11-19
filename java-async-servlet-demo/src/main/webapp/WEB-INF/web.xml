@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+<!--  使用注解@WebServlet("/syncServlet") 替代映射-->
+<!--  <servlet>-->
+<!--    <servlet-name>SyncServletDemo</servlet-name>-->
+<!--    <servlet-class>com.pjqdyd.SyncServletDemo</servlet-class>-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+<!--    <servlet-name>SyncServletDemo</servlet-name>-->
+<!--    <url-pattern>/syncServlet</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+</web-app>
+        
