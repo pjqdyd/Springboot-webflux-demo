@@ -1,4 +1,6 @@
 
+#### Springboot Webflux 异步的函数流编写web接口
+
 #### 项目结构:
 
 ```
@@ -8,3 +10,12 @@
  ├─.gitignore                           .gitignore文件
  └─pom.xml                              父pom文件               
 ```
+
+####  提示:
+
+  1. Mono<T> 是定义返回0 - 1个流序列
+  
+  2. Flux<T> 是定义返回0 - n个流序列
+        
+   当通过流返回给前端数据, Flux是通过[SSE](SSE.md)来实现数据
+   向浏览器流式推动的.
