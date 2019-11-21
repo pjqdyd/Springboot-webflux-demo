@@ -4,6 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.1.8.RELEASE</version>
+        <relativePath/>
+    </parent>
+
     <groupId>com.pjqdyd</groupId>
     <artifactId>springboot-webflux-demo</artifactId>
     <packaging>pom</packaging>
@@ -12,6 +19,8 @@
     <modules>
         <module>java-async-servlet-demo</module>
         <module>springboot-webflux-annotation-demo</module>
+        <module>springboot-webflux-router-demo</module>
+        <module>springboot-webflux-mongodb-reactive-demo</module>
     </modules>
 
     <properties>
