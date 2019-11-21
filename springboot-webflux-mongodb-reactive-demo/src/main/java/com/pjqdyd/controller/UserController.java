@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import javax.validation.Valid;
+
 /**
  *    
  *
@@ -54,7 +56,7 @@ public class UserController {
      * @return
      */
     @PostMapping("/save")
-    public Mono<User> createUser(@RequestBody User user) {
+    public Mono<User> createUser(@Valid @RequestBody User user) {
         //新增和修改都是save, 根据实际情况置空id
         //user.setId(null);
         return userRepository.save(user);
@@ -86,6 +88,7 @@ public class UserController {
      */
     @PutMapping("/update/{id}")
     public Mono<ResponseEntity<User>> updateUser(
+            @Valid
             @PathVariable("id") String id,
             @RequestBody User user) {
         return userRepository.findById(id).flatMap(u -> {
