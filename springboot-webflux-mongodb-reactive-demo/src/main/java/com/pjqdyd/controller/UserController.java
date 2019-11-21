@@ -2,6 +2,7 @@ package com.pjqdyd.controller;
 
 import com.pjqdyd.entity.User;
 import com.pjqdyd.repository.UserRepository;
+import com.pjqdyd.utils.CheckUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -59,6 +60,7 @@ public class UserController {
     public Mono<User> createUser(@Valid @RequestBody User user) {
         //新增和修改都是save, 根据实际情况置空id
         //user.setId(null);
+        CheckUtil.checkName(user.getName()); //校验名称
         return userRepository.save(user);
     }
 
