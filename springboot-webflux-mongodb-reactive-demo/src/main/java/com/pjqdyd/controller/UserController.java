@@ -38,7 +38,7 @@ public class UserController {
     }
 
     /**
-     * 响应式流sse多次返回用户结合
+     * 响应式流sse多次返回用户集合
      *
      * @return
      */
