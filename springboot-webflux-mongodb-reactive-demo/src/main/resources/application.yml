@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      #uri: mongodb://127.0.0.1:27017/db_mongo_test
+      uri: mongodb://admin:123456@127.0.0.1:27017/db_webflux_demo
