@@ -22,7 +22,7 @@ public class TestRouter {
         return RouterFunctions.route(
                 RequestPredicates.GET("/sayHiByRoute"), request -> {
                     Mono<String> result = Mono.just("hello!");
-                    return ServerResponse.ok().body(result, Mono.class);
+                    return ServerResponse.ok().body(result, String.class);
                 }
         );
     }
