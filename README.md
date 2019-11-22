@@ -8,6 +8,7 @@
  ├─springboot-webflux-annotation-demo       springboot webflux 注解方式模块
  ├─springboot-webflux-router-demo           springboot webflux 函数路由方式模块
  ├─springboot-webflux-mongodb-reactive-demo webflux整合mongodb reactive实现数据响应
+ ├─springboot-webflux-client-demo           响应式调用其他webflux服务的client模块(实现类似feign的远程调用)
  ├─.gitignore                               .gitignore文件
  └─pom.xml                                  父pom文件               
 ```
