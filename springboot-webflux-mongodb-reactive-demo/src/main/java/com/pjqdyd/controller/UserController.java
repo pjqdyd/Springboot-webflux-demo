@@ -45,6 +45,7 @@ public class UserController {
      *
      * @return
      */
+    @CrossOrigin
     @GetMapping(value = "/stream/all", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<User> getAllUserByStream() {
         return userRepository.findAll();
