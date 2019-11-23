@@ -21,6 +21,7 @@
         <module>springboot-webflux-annotation-demo</module>
         <module>springboot-webflux-router-demo</module>
         <module>springboot-webflux-mongodb-reactive-demo</module>
+        <module>springboot-webflux-redis-reactive-demo</module>
         <module>springboot-webflux-client-demo</module>
     </modules>
 
